@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name" translatable="false">DCCA</string>
+
+    <!--tensorflow-->
+    <string name="picture" translatable="false">Picture</string>
+    <string name="description_info" translatable="false">Info</string>
+    <string name="request_permission" translatable="false">This sample needs camera permission.</string>
+    <string name="camera_error" translatable="false">This device doesn\'t support Camera2 API.</string>
+    <string name="toggle_turn_on" translatable="false">NN:On</string>
+    <string name="toggle_turn_off" translatable="false">NN:Off</string>
+    <string name="toggle" translatable="false">Use NNAPI</string>
+
+    <string name="image_search" translatable="false">Search by Image</string>
+    <string name="image_text" translatable="false">Point the camera at your ingredient and press the button below:</string>
+    <string name="image_capture" translatable="false">Capture</string>
+
+    <!--search results activity-->
+    <string name="search_error" translatable="false">Sorry! No food items in our database match that entry. Please try again - adjust your picture or check your spelling</string>
+
+    <!--weight activity-->
+    <string name="default_weight" translatable="false">100</string>
+    <string name="weight_tv" translatable="false">Weight:</string>
+    <string name="title_tv" translatable="false">Item:</string>
+    <string name="nutrients_title" translatable="false">Nutritional Information:</string>
+    <string name="title_name" translatable="false">Nutrient</string>
+    <string name="title_value" translatable="false">Value</string>
+    <string name="title_unit" translatable="false">Unit</string>
+    <string name="confirm_weight_btn" translatable="false">Confirm Weight/Save Ingredient</string>
+
+
+    <!--main cases-->
+    <string name="case_energy" translatable="false">Energy</string>
+    <string name="case_protein" translatable="false">Protein</string>
+    <string name="case_fat" translatable="false">Total lipid (fat)</string>
+    <string name="case_carbs" translatable="false">Carbohydrate, by difference</string>
+    <string name="case_fiber" translatable="false">Fiber, total dietary</string>
+    <string name="case_sugar" translatable="false">Sugars, total</string>
+    <string name="case_sodium" translatable="false">Sodium, Na</string>
+    <string name="case_saturated_fat" translatable="false">Fatty acids, total saturated</string>
+
+    <!-- main nutrient names -->
+    <string name="name_energy" translatable="false">Calories</string>
+    <string name="name_protein" translatable="false">Protein</string>
+    <string name="name_fat" translatable="false">Fat</string>
+    <string name="name_carbs" translatable="false">Carbohydrates</string>
+    <string name="name_fiber" translatable="false">Fiber</string>
+    <string name="name_sugar" translatable="false">Sugar</string>
+    <string name="name_sodium" translatable="false">Sodium</string>
+    <string name="name_saturated_fat" translatable="false">Saturated Fat</string>
+
+    <string name="test" translatable="false">100</string>
+
+    <!--alternative cases - for potential future use-->
+    <string name="case_water" translatable="false">Water</string>
+    <string name="case_calcium" translatable="false">Calcium, Ca</string>
+    <string name="case_iron" translatable="false">Iron, Fe</string>
+    <string name="case_magnesium" translatable="false">Magnesium, Mg</string>
+    <string name="case_phosphoros" translatable="false">Phosphorus, P</string>
+    <string name="case_potassium" translatable="false">Potassium, K</string>
+    <string name="case_zinc" translatable="false">Zinc, Zn</string>
+    <string name="case_vit_c" translatable="false">Vitamin C, total ascorbic acid</string>
+    <string name="case_vit_b1" translatable="false">Thiamin</string>
+    <string name="case_vit_b2" translatable="false">Riboflavin</string>
+    <string name="case_vit_b3" translatable="false">Niacin</string>
+    <string name="case_vit_b6" translatable="false">Vitamin B-6</string>
+    <string name="case_vit_b9" translatable="false">Folate, DFE</string>
+    <string name="case_vit_b12" translatable="false">Vitamin B-12</string>
+    <string name="case_vit_a" translatable="false">Vitamin A, RAE</string>
+    <string name="case_vit_a_iu" translatable="false">Vitamin A, IU</string>
+    <string name="case_vit_e" translatable="false">Vitamin E(alpha-tocopherol)</string>
+    <string name="case_vit_d" translatable="false">Vitamin D(D2 + D3)</string>
+    <string name="case_vit_d_iu" translatable="false">Vitamin D</string>
+    <string name="case_vit_k" translatable="false">Vitamin K(phylloquinone)</string>
+    <string name="case_monounsaturated_fat" translatable="false">Fatty acids, total monounsaturated</string>
+    <string name="case_polyunsaturated_fat">Fatty acids, total polyunsaturated</string>
+    <string name="case_trans_fat">Fatty acids, total trans</string>
+    <string name="case_cholesterol">Cholesterol</string>
+    <string name="case_caffeine">Caffeine</string>
+
+    <string name="ndbno_apples">09003</string>
+
+    <!--DailyViewActivity strings-->
+    <string name="title_activity_daily_view">DailyViewActivity</string>
+    <string name="daily_view_right_btn">Right button: use to change to next day</string>
+    <string name="daily_view_left_btn">Left button: use to change to previous day</string>
+    <string name="daily_view_no_meals">No meals stored for this day. Click the plus button to add a meal.</string>
+
+    <!--MealTypeFragment strings-->
+    <string name="meal_breakfast">Breakfast</string>
+    <string name="meal_lunch">Lunch</string>
+    <string name="meal_dinner">Dinner</string>
+    <string name="meal_snacks">Snacks</string>
+    <string name="meal_prompt">What type of meal would you like to add?</string>
+
+    <!--MealBuilderActivity strings -->
+    <string name="tv_add_ingredient">Use the field below to add ingredients to your meal:</string>
+    <string name="ingredient_search_prompt">Search for an ingredient here</string>
+    <string name="title_activity_meal_builder">MealBuilderActivity</string>
+    <string name="name_sats">Sats</string>
+    <string name="name_carb">Carbs</string>
+    <string name="name_prot">Prot.</string>
+    <string name="name_sod">Na</string>
+
+
+    <!-- Unit suffixes -->
+    <string name="unit_weight">g</string>
+    <string name="unit_cals">kcal</string>
+    <string name="unit_sodium">mg</string>
+
+    <!--MainActivity strings-->
+    <string name="search_button">Search</string>
+</resources>
