@@ -134,7 +134,7 @@
         <item>NNAPI</item>
     </string-array>
 
-    <string name="item1">물품인식</string>
+    <string name="item1">다이어트</string>
     <string name="item1_1">QR/바코드 인식</string>
     <string name="item1_2">사물인식</string>
     <string name="item2">달인인증</string>
