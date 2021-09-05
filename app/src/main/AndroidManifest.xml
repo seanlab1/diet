@@ -60,6 +60,17 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.dcca.jane.mmy.activities.DailyViewActivity" />
         </activity>
+        <activity android:name=".tensorflow.FileSelection"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".tensorflow.ClassifierActivity"
+            android:label="@string/activity_name_classification"
+            android:screenOrientation="portrait">
+        </activity>
+
+
     </application>
 
 </manifest>

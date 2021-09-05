@@ -22,6 +22,20 @@
         <entry key="..\:/SEANLAB2021/1.Android/6.diet/DCCA/app/src/main/res/layout/nutrient_item.xml" value="0.14427083333333332" />
         <entry key="..\:/SEANLAB2021/1.Android/6.diet/DCCA/app/src/main/res/layout/search_results_item.xml" value="0.14427083333333332" />
         <entry key="..\:/SEANLAB2021/1.Android/6.diet/FYP/app/src/main/res/layout/activity_camera.xml" value="0.1265625" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA/app/src/main/res/drawable/bottom_sheet_bg.xml" value="0.14270833333333333" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA/app/src/main/res/drawable/camera_flash.xml" value="0.14270833333333333" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA/app/src/main/res/layout/activity_file_selection.xml" value="0.1265625" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA/app/src/main/res/layout/activity_live_barcode.xml" value="0.1265625" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA/app/src/main/res/layout/activity_main2.xml" value="0.1265625" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA/app/src/main/res/layout/activity_settings.xml" value="0.1265625" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA/app/src/main/res/layout/barcode_field.xml" value="0.1265625" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA/app/src/main/res/layout/camera_connection_fragment.xml" value="0.1265625" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA/app/src/main/res/layout/camera_preview_overlay.xml" value="0.1265625" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA/app/src/main/res/layout/layout_bottom_sheet.xml" value="0.1265625" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA/app/src/main/res/layout/product_item.xml" value="0.1265625" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA/app/src/main/res/layout/top_action_bar_in_live_camera.xml" value="0.1265625" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA/app/src/main/res/layout/top_action_bar_in_static_image.xml" value="0.1265625" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA/app/src/main/res/xml/preferences.xml" value="0.1265625" />
       </map>
     </option>
   </component>
@@ -69,7 +83,7 @@
       </value>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
