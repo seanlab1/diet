@@ -6,7 +6,6 @@
 
     <!--tf/image classifier permissiona-->
     <uses-permission android:name="android.permission.CAMERA" />
-
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
@@ -31,12 +30,26 @@
             android:label="@string/app_name">
         </activity>
         <activity android:name=".activities.MainActivity">
+            <!--
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
             <category android:name="android.intent.category.LAUNCHER" />
+
         </intent-filter>
+        -->
         </activity>
+        <activity android:name=".activities.Main2Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.LiveBarcodeScanningActivity" />
+        <activity android:name=".activities.LiveObjectCloudDetectionActivity" />
+
+
         <activity android:name=".activities.SearchResultsActivity" />
         <activity android:name=".activities.WeightActivity" />
         <activity

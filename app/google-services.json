@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "832887907732",
+    "firebase_url": "https://dalinpotatos.firebaseio.com",
+    "project_id": "dalinpotatos",
+    "storage_bucket": "dalinpotatos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832887907732:android:19b36642862b9c00c31b81",
+        "android_client_info": {
+          "package_name": "com.example.database"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832887907732-fcb18b6t7b0o5rnuvdjjduivaeovfq0t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALcpruZd_oEIi29pB0FbIOUnpxlPSrGsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832887907732-fcb18b6t7b0o5rnuvdjjduivaeovfq0t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832887907732:android:76e31ebde6832b86",
+        "android_client_info": {
+          "package_name": "com.photatos.go.mlkit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832887907732-fcb18b6t7b0o5rnuvdjjduivaeovfq0t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALcpruZd_oEIi29pB0FbIOUnpxlPSrGsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832887907732-fcb18b6t7b0o5rnuvdjjduivaeovfq0t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
