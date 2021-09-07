@@ -38,7 +38,6 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.dcca.jane.mmy.dalin.barcodedetection.BarcodeProcessor;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
@@ -56,9 +55,12 @@ import com.google.firebase.ml.vision.common.FirebaseVisionImage;
 import com.google.firebase.ml.vision.label.FirebaseVisionCloudImageLabelerOptions;
 import com.google.firebase.ml.vision.label.FirebaseVisionImageLabel;
 import com.google.firebase.ml.vision.label.FirebaseVisionImageLabeler;
+
+
 import com.dcca.jane.mmy.R;
 import com.dcca.jane.mmy.dalin.common.GraphicOverlayLabel;
 import com.dcca.jane.mmy.dalin.common.VisionImageProcessor;
+import com.dcca.jane.mmy.activities.Main2Activity;
 
 import com.dcca.jane.mmy.dalin.camera.CameraSource;
 import com.dcca.jane.mmy.dalin.camera.CameraSourcePreview;
@@ -123,9 +125,9 @@ public class LiveObjectCloudDetectionActivity extends AppCompatActivity implemen
   private Bitmap objectThumbnailForBottomSheet;
   private boolean slidingSheetUpFromHiddenState;
 
-//  //database
-//  DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
-//  DatabaseReference RecycleTag = mRootRef.child("recycletag");
+  //database
+  DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
+  DatabaseReference RecycleTag = mRootRef.child("recycletag");
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -175,45 +177,45 @@ public class LiveObjectCloudDetectionActivity extends AppCompatActivity implemen
 
     setUpWorkflowModel();
   }
-//  public void addListenerOnButton() {
+  public void addListenerOnButton() {
+
+    RecycleTag.addValueEventListener(new ValueEventListener() {
+      @Override
+      public void onDataChange(DataSnapshot dataSnapshot) {
+//        ReservData Reservdata = dataSnapshot.getValue(ReservData.class);
+        String text = dataSnapshot.getValue(String.class);
+        Log.d(TAG, "dataSnapshot text: " + text);
+
+        if (text==null)
+        {
+//          ReservationDate ="No Reservateion";
+//          display="예약 없습니다.";
+        } else
+          {
+//            if(yearint>=year2 && monthint>=dayofweek && dayint >= dayofmonth){
+//            ReservationDate = text;
+//            display=text+"예약 되었습니다";
+//             }else{
+//            ReservationDate = text;
+//            display=text+"예약이  지났습니다.";
+//             }
 //
-//    RecycleTag.addValueEventListener(new ValueEventListener() {
-//      @Override
-//      public void onDataChange(DataSnapshot dataSnapshot) {
-////        ReservData Reservdata = dataSnapshot.getValue(ReservData.class);
-//        String text = dataSnapshot.getValue(String.class);
-//        Log.d(TAG, "dataSnapshot text: " + text);
-//
-//        if (text==null)
-//        {
-////          ReservationDate ="No Reservateion";
-////          display="예약 없습니다.";
-//        } else
-//          {
-////            if(yearint>=year2 && monthint>=dayofweek && dayint >= dayofmonth){
-////            ReservationDate = text;
-////            display=text+"예약 되었습니다";
-////             }else{
-////            ReservationDate = text;
-////            display=text+"예약이  지났습니다.";
-////             }
-////
-////            ReservationDate = text;
-////            display=text+"예약 되었습니다";
-//        }
-//
-//      }
-//
-//      @Override
-//      public void onCancelled(DatabaseError databaseError) {
-//
-//      }
-//    });
-//
-//
-//
-//
-//  }
+//            ReservationDate = text;
+//            display=text+"예약 되었습니다";
+        }
+
+      }
+
+      @Override
+      public void onCancelled(DatabaseError databaseError) {
+
+      }
+    });
+
+
+
+
+  }
 
   @Override
   protected void onResume() {
@@ -223,11 +225,11 @@ public class LiveObjectCloudDetectionActivity extends AppCompatActivity implemen
     settingsButton.setEnabled(true);
     bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
     currentWorkflowState = WorkflowState.NOT_STARTED;
-//    cameraSource.setFrameProcessor(
-//        PreferenceUtils.isMultipleObjectsMode(this)
-//            ? new MultiObjectProcessor(graphicOverlay, workflowModel)
-//            : new ProminentObjectProcessor(graphicOverlay, workflowModel));
-    cameraSource.setFrameProcessor(new BarcodeProcessor(graphicOverlay, workflowModel));
+    Log.d(TAG, "gisMultipleObjectsMode::"+PreferenceUtils.isMultipleObjectsMode(this));
+    cameraSource.setFrameProcessor(
+        PreferenceUtils.isMultipleObjectsMode(this)
+            ? new MultiObjectProcessor(graphicOverlay, workflowModel)
+            : new ProminentObjectProcessor(graphicOverlay, workflowModel));
     workflowModel.setWorkflowState(WorkflowState.DETECTING);
   }
 
@@ -543,7 +545,6 @@ public class LiveObjectCloudDetectionActivity extends AppCompatActivity implemen
 
 
                   Activity activity = LiveObjectCloudDetectionActivity.this;
-                  //sean
                   activity.startActivity(new Intent(activity, com.dcca.jane.mmy.activities.Main2Activity.class));
                 }
 
@@ -571,7 +572,63 @@ public class LiveObjectCloudDetectionActivity extends AppCompatActivity implemen
 
   }
 
+  public void getFromCloud() {
+    DetectedObject object = workflowModel.getConfirmedObject();
+    Log.e(TAG, "SEAN:FirebaseVisionImage===>start");
+    //searchbitmap=searchedObject.getObjectThumbnail();
+    if (object != null) {
+      searchbitmap = object.getBitmap();
 
+     FirebaseVisionImage image = FirebaseVisionImage.fromBitmap(searchbitmap);
+      detector.processImage(image)
+      .addOnSuccessListener(new OnSuccessListener<List<FirebaseVisionImageLabel>>() {
+        @Override
+        public void onSuccess(List<FirebaseVisionImageLabel> firebaseVisionImageLabels) {
+          //
+          Log.e(TAG, "SEAN:FirebaseVisionImage===>onSuccess");
+          Log.d(TAG, "cloud label size: " + firebaseVisionImageLabels.size());
+          List<String> labelsStr = new ArrayList<>();
+          List<Product> productList = new ArrayList<>();
+          for (int i = 0; i < firebaseVisionImageLabels.size(); ++i) {
+            FirebaseVisionImageLabel label = firebaseVisionImageLabels.get(i);
+            Log.d(TAG, "cloud label: " + label);
+            if (label.getText() != null) {
+              labelsStr.add((label.getText()));
+              String labels=label.getText();
+              Float confidence=label.getConfidence();
+              productList.add(
+                      new Product( "", labels + i, confidence.toString() + i));
+
+            }
+          }
+
+
+          bottomSheetTitleView.setText(
+                  getResources()
+                          .getQuantityString(
+                                  R.plurals.bottom_sheet_title, labelsStr.size(), labelsStr.size()));
+
+          productRecyclerView.setAdapter(new ProductAdapter(productList));
+          Log.d(TAG, "searched : " + productList.size());
+
+          ///
+        }
+      })
+      .addOnFailureListener(new OnFailureListener() {
+        @Override
+        public void onFailure(@NonNull Exception e) {
+          //
+          Log.e(TAG, "SEAN:FirebaseVisionImage===>onFailure");
+          //
+        }
+      })
+      ;
+      //imageProcessor = new CloudImageLabelingProcessor();
+      //imageProcessor.process(searchbitmap, graphicImageOverlay);
+    }
+    Log.e(TAG, "SEAN:FirebaseVisionImage===>end" );
+
+  }
   private void stateChangeInAutoSearchMode(WorkflowState workflowState) {
     boolean wasPromptChipGone = (promptChip.getVisibility() == View.GONE);
 

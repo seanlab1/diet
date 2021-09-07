@@ -39,6 +39,7 @@ public class PreferenceUtils {
   }
 
   public static boolean isMultipleObjectsMode(Context context) {
+
     return getBooleanPref(
         context, R.string.pref_key_object_detector_enable_multiple_objects, false);
   }

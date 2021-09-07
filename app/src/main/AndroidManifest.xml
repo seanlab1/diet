@@ -52,8 +52,24 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".activities.LiveBarcodeScanningActivity" />
-        <activity android:name=".activities.LiveObjectCloudDetectionActivity" />
+        <activity
+            android:name=".activities.LiveBarcodeScanningActivity"
+            android:exported="false"
+            android:configChanges="orientation|keyboardHidden"
+            >
+            <meta-data
+                android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+                android:value="barcode" />
+        </activity>
+        <activity
+            android:name=".activities.LiveObjectCloudDetectionActivity"
+            android:exported="false"
+            android:configChanges="orientation|keyboardHidden"
+            >
+            <meta-data
+                android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+                android:value="label" />
+        </activity>
 
         <activity android:name=".activities.SearchResultsActivity" />
         <activity android:name=".activities.WeightActivity" />

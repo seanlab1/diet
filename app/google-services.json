@@ -1,121 +1,33 @@
 {
   "project_info": {
-    "project_number": "412960199729",
-    "firebase_url": "https://seanml-b0745.firebaseio.com",
-    "project_id": "seanml-b0745",
-    "storage_bucket": "seanml-b0745.appspot.com"
+    "project_number": "812189255171",
+    "project_id": "dcca-ac3f7",
+    "storage_bucket": "dcca-ac3f7.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:412960199729:android:5acc68b016e6343f42f110",
+        "mobilesdk_app_id": "1:812189255171:android:a7a198e16b80fb39f17036",
         "android_client_info": {
           "package_name": "com.dcca.jane.mmy"
         }
       },
       "oauth_client": [
         {
-          "client_id": "412960199729-mj4vp5rl79vhbelnslg1l93ch5ujtb0i.apps.googleusercontent.com",
+          "client_id": "812189255171-fkmrev82pbsac3rr7kf2r5e12f6bolte.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD17vQrfSBA4ADlEtJTmdADtzgirNkzcJk"
+          "current_key": "AIzaSyBf7VAoGE98SrbIxv7FsYVyPnHTeQl8tek"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "412960199729-mj4vp5rl79vhbelnslg1l93ch5ujtb0i.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:412960199729:android:dd0e1ad78bf3215042f110",
-        "android_client_info": {
-          "package_name": "com.developersk.firebasemlkitdemo"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "412960199729-mj4vp5rl79vhbelnslg1l93ch5ujtb0i.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyD17vQrfSBA4ADlEtJTmdADtzgirNkzcJk"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "412960199729-mj4vp5rl79vhbelnslg1l93ch5ujtb0i.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:412960199729:android:3f361a662a44354a42f110",
-        "android_client_info": {
-          "package_name": "com.example.chatapp"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "412960199729-mj4vp5rl79vhbelnslg1l93ch5ujtb0i.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyD17vQrfSBA4ADlEtJTmdADtzgirNkzcJk"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "412960199729-mj4vp5rl79vhbelnslg1l93ch5ujtb0i.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:412960199729:android:f9ce5adc464cb06842f110",
-        "android_client_info": {
-          "package_name": "com.photatos.ml2.mlkit"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "412960199729-mj4vp5rl79vhbelnslg1l93ch5ujtb0i.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyD17vQrfSBA4ADlEtJTmdADtzgirNkzcJk"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "412960199729-mj4vp5rl79vhbelnslg1l93ch5ujtb0i.apps.googleusercontent.com",
+              "client_id": "812189255171-fkmrev82pbsac3rr7kf2r5e12f6bolte.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
