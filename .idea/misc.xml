@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/SEANLAB2021/1.Android/1.Diet/DCCA/app/src/main/res/layout/activity_live_barcode.xml" value="0.11875" />
         <entry key="..\:/SEANLAB2021/1.Android/6.diet/DCCA/app/src/main/res/layout-land/fragment_camera2_basic.xml" value="0.12213403880070546" />
         <entry key="..\:/SEANLAB2021/1.Android/6.diet/DCCA/app/src/main/res/layout/activity_camera.xml" value="0.14427083333333332" />
         <entry key="..\:/SEANLAB2021/1.Android/6.diet/DCCA/app/src/main/res/layout/activity_daily_view.xml" value="0.14739583333333334" />
@@ -24,6 +25,7 @@
         <entry key="..\:/SEANLAB2021/1.Android/6.diet/FYP/app/src/main/res/layout/activity_camera.xml" value="0.1265625" />
         <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA/app/src/main/res/drawable/bottom_sheet_bg.xml" value="0.14270833333333333" />
         <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA/app/src/main/res/drawable/camera_flash.xml" value="0.14270833333333333" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA/app/src/main/res/layout-land/top_action_bar_in_live_camera.xml" value="0.10714285714285714" />
         <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA/app/src/main/res/layout/activity_file_selection.xml" value="0.1265625" />
         <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA/app/src/main/res/layout/activity_live_barcode.xml" value="0.1265625" />
         <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA/app/src/main/res/layout/activity_main2.xml" value="0.1265625" />

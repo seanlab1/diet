@@ -32,6 +32,9 @@ import androidx.lifecycle.ViewModelProviders;
 import com.google.android.material.chip.Chip;
 import com.google.common.base.Objects;
 import com.google.firebase.ml.vision.barcode.FirebaseVisionBarcode;
+//import com.google.mlkit.vision.barcode.BarcodeScanner;
+//import com.google.mlkit.vision.barcode.Barcode;
+
 import com.dcca.jane.mmy.R;
 import com.dcca.jane.mmy.dalin.barcodedetection.BarcodeField;
 import com.dcca.jane.mmy.dalin.barcodedetection.BarcodeProcessor;
@@ -257,7 +260,10 @@ public class LiveBarcodeScanningActivity extends AppCompatActivity implements On
             }else
             {
               int type = barcode.getValueType();
+
               switch (type) {
+
+                //case Barcode.TYPE_EMAIL:
                 case FirebaseVisionBarcode.TYPE_URL:
                   Intent view = new Intent(Intent.ACTION_VIEW);
                   view.setData(Uri.parse(barcode.getDisplayValue()));

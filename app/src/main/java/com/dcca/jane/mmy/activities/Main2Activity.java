@@ -28,10 +28,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
-import com.dcca.jane.mmy.activities.LiveBarcodeScanningActivity;
-import com.dcca.jane.mmy.activities.LiveObjectCloudDetectionActivity;
-
-
 import com.dcca.jane.mmy.R;
 
 
