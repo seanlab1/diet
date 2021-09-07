@@ -118,8 +118,8 @@ public class LiveObjectCloudDetectionActivity extends AppCompatActivity implemen
 
   private  FirebaseVisionImageLabeler detector;
 
-  private BottomSheetBehavior<View> bottomSheetBehavior;
-  private BottomSheetScrimView bottomSheetScrimView;
+  //private BottomSheetBehavior<View> bottomSheetBehavior;
+  //private BottomSheetScrimView bottomSheetScrimView;
   private RecyclerView productRecyclerView;
   private TextView bottomSheetTitleView;
   private Bitmap objectThumbnailForBottomSheet;
@@ -157,6 +157,8 @@ public class LiveObjectCloudDetectionActivity extends AppCompatActivity implemen
 
     //sean
     graphicImageOverlay = (GraphicOverlayLabel) findViewById(R.id.previewOverlay);
+
+
     if (graphicImageOverlay == null) {
       Log.d(TAG, "graphicOverlay is null");
     }
@@ -166,8 +168,8 @@ public class LiveObjectCloudDetectionActivity extends AppCompatActivity implemen
     detector = FirebaseVision.getInstance().getCloudImageLabeler(optionsBuilder.build());
 
 
-
-    setUpBottomSheet();
+     //sean_0907
+    //setUpBottomSheet();
 
     findViewById(R.id.close_button).setOnClickListener(this);
     flashButton = findViewById(R.id.flash_button);
@@ -223,13 +225,15 @@ public class LiveObjectCloudDetectionActivity extends AppCompatActivity implemen
 
     workflowModel.markCameraFrozen();
     settingsButton.setEnabled(true);
-    bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
+    //sean_0907
+    //bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
     currentWorkflowState = WorkflowState.NOT_STARTED;
     Log.d(TAG, "gisMultipleObjectsMode::"+PreferenceUtils.isMultipleObjectsMode(this));
     cameraSource.setFrameProcessor(
         PreferenceUtils.isMultipleObjectsMode(this)
             ? new MultiObjectProcessor(graphicOverlay, workflowModel)
             : new ProminentObjectProcessor(graphicOverlay, workflowModel));
+//    cameraSource.setFrameProcessor(new ProminentObjectProcessor(graphicOverlay, workflowModel));
     workflowModel.setWorkflowState(WorkflowState.DETECTING);
   }
 
@@ -254,11 +258,14 @@ public class LiveObjectCloudDetectionActivity extends AppCompatActivity implemen
 
   @Override
   public void onBackPressed() {
-    if (bottomSheetBehavior.getState() != BottomSheetBehavior.STATE_HIDDEN) {
-      bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
-    } else {
-      super.onBackPressed();
-    }
+
+    super.onBackPressed();
+    //sean_0907
+//    if (bottomSheetBehavior.getState() != BottomSheetBehavior.STATE_HIDDEN) {
+//      bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
+//    } else {
+//      super.onBackPressed();
+//    }
   }
 
   @Override
@@ -267,9 +274,9 @@ public class LiveObjectCloudDetectionActivity extends AppCompatActivity implemen
     if (id == R.id.product_search_button) {
       searchButton.setEnabled(false);
       workflowModel.onSearchButtonClicked();
-
-    } else if (id == R.id.bottom_sheet_scrim_view) {
-      bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
+//sean_0907
+//    } else if (id == R.id.bottom_sheet_scrim_view) {
+//      bottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
 
     } else if (id == R.id.close_button) {
       onBackPressed();
@@ -413,7 +420,7 @@ public class LiveObjectCloudDetectionActivity extends AppCompatActivity implemen
 
 
   }
-
+  /* sean_0907
   private void setUpBottomSheet() {
     bottomSheetBehavior = BottomSheetBehavior.from(findViewById(R.id.bottom_sheet));
     bottomSheetBehavior.setBottomSheetCallback(
@@ -475,6 +482,7 @@ public class LiveObjectCloudDetectionActivity extends AppCompatActivity implemen
     productRecyclerView.setLayoutManager(new LinearLayoutManager(this));
     productRecyclerView.setAdapter(new ProductAdapter(ImmutableList.of()));
   }
+  */
 
   private void setUpWorkflowModel() {
     workflowModel = ViewModelProviders.of(this).get(WorkflowModel.class);

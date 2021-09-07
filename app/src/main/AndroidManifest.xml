@@ -76,7 +76,7 @@
         <activity
             android:name=".activities.DailyViewActivity"
             android:label="@string/title_activity_daily_view"
-            android:theme="@style/AppTheme.NoActionBar"
+            android:theme="@style/AppTheme"
             android:clearTaskOnLaunch="true">
             <!--<intent-filter>-->
                 <!--<action android:name="android.intent.action.MAIN" />-->
@@ -88,7 +88,7 @@
             android:name=".activities.MealBuilderActivity"
             android:label="@string/title_activity_meal_builder"
             android:parentActivityName=".activities.DailyViewActivity"
-            android:theme="@style/AppTheme.NoActionBar"
+            android:theme="@style/AppTheme"
             android:finishOnTaskLaunch="true">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -103,7 +103,13 @@
             android:label="@string/activity_name_classification"
             android:screenOrientation="portrait">
         </activity>
-
+        <activity
+            android:name=".dalin.settings.SettingsActivity"
+            android:exported="false"
+            android:label="@string/settings_title"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.AppCompat.Light">
+        </activity>
 
     </application>
 
