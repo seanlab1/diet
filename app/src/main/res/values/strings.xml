@@ -111,7 +111,7 @@
     <string name="search_button">Search</string>
 
 
-    <!--ADD-->
+    <!--tensorflow -->
     <string name="activity_name_classification">TFL Classify</string>
     <string name="activity_name_detection">TFL Detect</string>
     <string name="activity_name_speech">TFL Speech</string>
@@ -133,7 +133,7 @@
         <item>NNAPI</item>
     </string-array>
 
-
+    <!--main2 -->
     <string name="item1">다이어트</string>
     <string name="item1_1">QR/바코드 인식</string>
     <string name="item1_2">사물인식</string>
@@ -142,97 +142,8 @@
     <string name="item4">재활용의 모든것</string>
     <string name="item7">예약 내용</string>
     <string name="item8">예약 하기</string>
-
-    <!--  google -->
-    <string name="entry_java_title">Java</string>
-    <string name="entry_java_subtitle">Run the MLKit Showcase written in Java.</string>
-    <string name="entry_kotlin_title">Kotlin</string>
-    <string name="entry_kotlin_subtitle">Run the MLKit Showcase written in Kotlin.</string>
-    <string name="mode_odt_live_home_title">재활용의 모든것</string>
-    <string name="mode_odt_live_home_subtitle">자세한 재활용 활용법을 알아보아요.</string>
-    <string name="mode_odt_live_image_label_title">인공지능 재활용 알아보기</string>
-    <string name="mode_odt_live_image_label_subtitle">머신러닝으로 이미지 라벨을 검색을 해보세요.</string>
-    <string name="mode_odt_live_image_title">비슷한 이미지 검색</string>
-    <string name="mode_odt_live_image_subtitle">머신러닝으로 비슷한 사진을 검색을 해보세요.</string>
-    <string name="mode_odt_live_text_title">글자 인식하기</string>
-    <string name="mode_odt_live_text_subtitle">간단히 카드 유효기간을 확인해보세요.</string>
-    <string name="mode_odt_live_barcode_title">바코드 QR 코드로 재활용 알아보기</string>
-    <string name="mode_odt_live_barcode_subtitle">바코드 또는 QR를  찾아보세요.</string>
-    <string name="mode_odt_live_landmark_title">유명장소 찾기</string>
-    <string name="mode_odt_live_landmark_subtitle">유명지 사진이 맞는지 확인해보세요.</string>
-    <string name="mode_odt_live_face_title">얼굴 인식</string>
-    <string name="mode_odt_live_face_subtitle">인공지능 얼굴인식을 해보세요.</string>
-    <string name="mode_odt_live_myimage_title">나의 재활용</string>
-    <string name="mode_odt_live_myimage_subtitle">재활용 뽐내기.</string>
-    <string name="mode_odt_live_mypoint_title">나의 포인트</string>
-    <string name="mode_odt_live_mypoint_subtitle">나의 포인트를 알아보세요.</string>
-    <string name="mode_odt_static_title">Object Detection: Static Image</string>
-    <string name="mode_odt_static_subtitle">One or more objects can be detected from a provided image.</string>
-    <string name="mode_barcode_live_title">Barcode Scanning</string>
-    <string name="mode_barcode_live_subtitle">Read data encoded in most standard barcode formats.</string>
-    <string name="settings_title">MLKit Showcase Settings</string>
-    <string name="cd_settings_button">Settings</string>
-    <string name="cd_close_button">Back</string>
-    <string name="cd_flash_button">Toggle camera flash</string>
-    <string name="cd_photo_library_button">Upload image</string>
-    <string name="prompt_point_at_an_object">Point your camera at an object</string>
-    <string name="prompt_point_at_a_barcode">Point your camera at a barcode</string>
-    <string name="prompt_hold_camera_steady">Keep camera still for a moment</string>
-    <string name="prompt_move_camera_closer">Move closer to search</string>
-    <string name="prompt_searching">Searching&#8230;</string>
-    <string name="product_search_button">사진 검색</string>
-    <plurals name="bottom_sheet_title">
-        <item quantity="one">%d 건 검색됨</item>
-        <item quantity="other">%d 건 검색됨</item>
-    </plurals>
-    <string name="static_image_prompt_detected_no_results">No results found</string>
-    <string name="static_image_prompt_detected_results">Tap on a dot to inspect</string>
-    <string name="static_image_card_no_result_title">No result found</string>
-    <string name="static_image_card_no_result_subtitle">Support text place holder</string>
-    <string name="static_image_preview_card_subtitle">+%d more results</string>
-
-    <!-- Strings for camera settings. -->
-    <string name="pref_category_camera">Camera</string>
-    <string name="pref_key_rear_camera_preview_size" translatable="false">rcpvs</string>
-    <string name="pref_key_rear_camera_picture_size" translatable="false">rcpts</string>
-    <string name="pref_title_rear_camera_preview_size">Rear camera preview size</string>
-
-    <!-- Strings for object detection settings. -->
-    <string name="pref_category_object_detection">Object detection</string>
-    <string name="pref_key_object_detector_enable_multiple_objects" translatable="false">odemo</string>
-    <string name="pref_title_object_detector_enable_multiple_objects">Enable multiple objects</string>
-    <string name="pref_key_object_detector_enable_classification" translatable="false">odec</string>
-    <string name="pref_title_object_detector_enable_classification">Enable classification</string>
-
-    <!-- Strings for product search settings. -->
-    <string name="pref_category_product_search">Product search</string>
-    <string name="pref_key_enable_auto_search" translatable="false">pkeas</string>
-    <string name="pref_title_enable_auto_search">Enable auto search</string>
-    <string name="pref_key_confirmation_time_in_manual_search" translatable="false">ctims</string>
-    <string name="pref_title_confirmation_time_in_manual_search">Confirmation time in manual search</string>
-    <string name="pref_summary_confirmation_time_in_manual_search">Ranges from 100ms to 1000ms</string>
-    <string name="pref_key_confirmation_time_in_auto_search" translatable="false">ctias</string>
-    <string name="pref_title_confirmation_time_in_auto_search">Confirmation time in auto search</string>
-    <string name="pref_summary_confirmation_time_in_auto_search">Ranges from 500ms to 2000ms</string>
-
-    <!-- Strings for barcode detection settings. -->
-    <string name="pref_category_barcode_detection">Barcode detection</string>
-    <string name="pref_key_barcode_reticle_width" translatable="false">barcode_brw</string>
-    <string name="pref_title_barcode_reticle_width">Barcode reticle width</string>
-    <string name="pref_summary_barcode_reticle_width" formatted="false">Relative to the camera view width, ranges from 50% to 95%</string>
-    <string name="pref_key_barcode_reticle_height" translatable="false">barcode_brh</string>
-    <string name="pref_title_barcode_reticle_height">Barcode reticle height</string>
-    <string name="pref_summary_barcode_reticle_height" formatted="false">Relative to the camera view height, ranges from 20% to 80%</string>
-    <string name="pref_key_enable_barcode_size_check" translatable="false">barcode_ebsc</string>
-    <string name="pref_title_enable_barcode_size_check">Enable barcode size check</string>
-    <string name="pref_summary_enable_barcode_size_check">Will prompt user to move camera closer if the detected barcode is too small</string>
-    <string name="pref_key_minimum_barcode_width" translatable="false">barcode_mbw</string>
-    <string name="pref_title_minimum_barcode_width">Minimum barcode width</string>
-    <string name="pref_summary_minimum_barcode_width" formatted="false">Relative to the reticle width, ranges from 20% to 80% (only applicable when barcode size check enabled)</string>
-    <string name="pref_key_delay_loading_barcode_result" translatable="false">barcode_dlbr</string>
-    <string name="pref_title_delay_loading_barcode_result">Delay loading barcode result</string>
-    <string name="pref_summary_delay_loading_barcode_result">Will show the loading spinner for 2s</string>
-
-    <!--  google -->
     <string name="maintitle">대형폐기물 예약</string>
+
+
+
 </resources>

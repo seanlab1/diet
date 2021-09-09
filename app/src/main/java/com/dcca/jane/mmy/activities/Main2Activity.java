@@ -118,7 +118,7 @@ public class Main2Activity extends AppCompatActivity {
         // TODO : click event
         Activity activity = Main2Activity.this;
        // activity.startActivity(new Intent(activity, com.photatos.go.mlkit.ghost.view.LoginActivity.class));
-        activity.startActivity(new Intent(activity, com.dcca.jane.mmy.activities.LiveBarcodeScanningActivity.class));
+        activity.startActivity(new Intent(activity, com.dcca.jane.mmy.activities.MainActivity.class));
       }
     });
     Item3Button.setOnClickListener(new Button.OnClickListener() {
@@ -126,7 +126,7 @@ public class Main2Activity extends AppCompatActivity {
       public void onClick(View view) {
         // TODO : click event
         Activity activity = Main2Activity.this; //com.photatos.go.mlkit.ghost.view.LoginActivity.class)
-        activity.startActivity(new Intent(activity, com.dcca.jane.mmy.activities.LiveObjectCloudDetectionActivity.class));
+        activity.startActivity(new Intent(activity, com.dcca.jane.mmy.tensorflow.FileSelection.class));
       }
     });
     Item4Button.setOnClickListener(new Button.OnClickListener() {
@@ -134,7 +134,7 @@ public class Main2Activity extends AppCompatActivity {
       public void onClick(View view) {
         // TODO : click event
         Activity activity = Main2Activity.this;
-        activity.startActivity(new Intent(activity, com.dcca.jane.mmy.tensorflow.FileSelection.class));
+        activity.startActivity(new Intent(activity, DailyViewActivity.class));
       }
     });
 
@@ -162,9 +162,13 @@ public class Main2Activity extends AppCompatActivity {
   @Override
   protected void onResume() {
     super.onResume();
+
+/* sean_0909
     if (!Utils.allPermissionsGranted(this)) {
       Utils.requestRuntimePermissions(this);
     }
+
+ */
   }
 
 
