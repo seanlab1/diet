@@ -30,6 +30,8 @@ import androidx.appcompat.app.AppCompatDelegate;
 
 import com.dcca.jane.mmy.R;
 
+import com.dcca.jane.mmy.tensorflow.FileSelection;
+
 
 /** Entry activity to select the detection mode. */
 public class Main2Activity extends AppCompatActivity {
@@ -65,7 +67,7 @@ public class Main2Activity extends AppCompatActivity {
 
     int REQ_CAMERA_PERMISSION = 1001;
 
-    AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
+    //sean_0909 AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
     setContentView(R.layout.activity_main2);
 
 

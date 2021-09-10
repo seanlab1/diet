@@ -135,14 +135,14 @@
 
     <!--main2 -->
     <string name="item1">다이어트</string>
-    <string name="item1_1">QR/바코드 인식</string>
-    <string name="item1_2">사물인식</string>
-    <string name="item2">달인인증</string>
+    <string name="item1_1">Diet</string>
+    <string name="item1_2">Tensorflow</string>
+    <string name="item2">machine learning</string>
     <string name="item3">내 포인트</string>
-    <string name="item4">재활용의 모든것</string>
+    <string name="item4">다이어트 모든것</string>
     <string name="item7">예약 내용</string>
     <string name="item8">예약 하기</string>
-    <string name="maintitle">대형폐기물 예약</string>
+    <string name="maintitle">헬스장 예약</string>
 
 
 
