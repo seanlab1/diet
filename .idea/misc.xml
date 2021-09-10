@@ -30,6 +30,17 @@
         <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA2/app/src/main/res/layout/activity_main2.xml" value="0.19202898550724637" />
         <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA2/app/src/main/res/layout/camera_connection_fragment.xml" value="0.1" />
         <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA2/app/src/main/res/layout/layout_bottom_sheet.xml" value="0.14010416666666667" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA3/app/src/main/res/layout/activity_chooser.xml" value="0.1" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA3/app/src/main/res/layout/activity_settings.xml" value="0.1265625" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA3/app/src/main/res/layout/activity_still_image.xml" value="0.15625" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA3/app/src/main/res/layout/activity_vision_cameraxsource_demo.xml" value="0.15625" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA3/app/src/main/res/layout/activity_vision_live_preview.xml" value="0.15625" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA3/app/src/main/res/layout/settings_style.xml" value="0.15625" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA3/app/src/main/res/layout/spinner_style.xml" value="0.1265625" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA3/app/src/main/res/layout/toggle_style.xml" value="0.15625" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA3/app/src/main/res/menu/camera_button_menu.xml" value="0.15625" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA3/app/src/main/res/xml/preference_live_preview_quickstart.xml" value="0.15625" />
+        <entry key="..\:/SEANLAB2021/1.Android/8.diet3/DCCA3/app/src/main/res/xml/preference_still_image.xml" value="0.1265625" />
       </map>
     </option>
   </component>
