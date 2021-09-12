@@ -83,6 +83,32 @@
             android:label="@string/activity_name_classification"
             android:screenOrientation="portrait">
         </activity>
+        <!--new google mlkit-->
+        <activity android:name=".mlkit.ChooserActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".mlkit.StillImageActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".mlkit.CameraXSourceDemoActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".mlkit.CameraXLivePreviewActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".mlkit.LivePreviewActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".mlkit.graphic.preference.SettingsActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
     </application>
 
 </manifest>

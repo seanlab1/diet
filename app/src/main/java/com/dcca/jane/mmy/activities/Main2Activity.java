@@ -110,7 +110,7 @@ public class Main2Activity extends AppCompatActivity {
       public void onClick(View view) {
         // TODO : click event
         Activity activity = Main2Activity.this;
-        //activity.startActivity(new Intent(activity, com.photatos.go.mlkit.md.java.QRActivity.class));
+
         activity.startActivity(new Intent(activity, com.dcca.jane.mmy.tensorflow.FileSelection.class));
       }
     });
@@ -119,7 +119,7 @@ public class Main2Activity extends AppCompatActivity {
       public void onClick(View view) {
         // TODO : click event
         Activity activity = Main2Activity.this;
-       // activity.startActivity(new Intent(activity, com.photatos.go.mlkit.ghost.view.LoginActivity.class));
+
         activity.startActivity(new Intent(activity, com.dcca.jane.mmy.activities.MainActivity.class));
       }
     });
@@ -127,8 +127,8 @@ public class Main2Activity extends AppCompatActivity {
       @Override
       public void onClick(View view) {
         // TODO : click event
-        Activity activity = Main2Activity.this; //com.photatos.go.mlkit.ghost.view.LoginActivity.class)
-        activity.startActivity(new Intent(activity, com.dcca.jane.mmy.tensorflow.FileSelection.class));
+        Activity activity = Main2Activity.this;
+        activity.startActivity(new Intent(activity, com.dcca.jane.mmy.mlkit.ChooserActivity.class));
       }
     });
     Item4Button.setOnClickListener(new Button.OnClickListener() {
@@ -136,7 +136,7 @@ public class Main2Activity extends AppCompatActivity {
       public void onClick(View view) {
         // TODO : click event
         Activity activity = Main2Activity.this;
-        activity.startActivity(new Intent(activity, DailyViewActivity.class));
+        activity.startActivity(new Intent(activity, com.dcca.jane.mmy.mlkit.CameraXSourceDemoActivity.class));
       }
     });
 
@@ -145,7 +145,7 @@ public class Main2Activity extends AppCompatActivity {
       public void onClick(View view) {
         // TODO : click event
         Activity activity = Main2Activity.this;
-        activity.startActivity(new Intent(activity, com.dcca.jane.mmy.tensorflow.FileSelection.class));
+        activity.startActivity(new Intent(activity, com.dcca.jane.mmy.mlkit.CameraXLivePreviewActivity.class));
       }
     });
 
@@ -154,7 +154,7 @@ public class Main2Activity extends AppCompatActivity {
       public void onClick(View view) {
         // TODO : click event
         Activity activity = Main2Activity.this;
-        //activity.startActivity(new Intent(activity, com.photatos.go.mlkit.md.java.ReservationActivity.class));
+
         activity.startActivity(new Intent(activity, com.dcca.jane.mmy.tensorflow.FileSelection.class));
       }
     });
